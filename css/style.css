@@ -1,0 +1,133 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #02C6F2;
+}
+
+.wrapper {
+}
+.wrapper__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper__body {
+	width: 380px;
+	margin: 150px auto;
+}
+
+.select-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	max-height: 90px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.select-menu__text {
+	font-size: 20px;
+	font-weight: 600;
+}
+.select-menu__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+.select-menu__button.active {
+	transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+	font-size: 20px;
+}
+.options {
+	border-radius: 8px;
+	background-color: white;
+	margin-top: 15px;
+	padding: 20px;
+	display: none;
+}
+
+.options.active {
+	display: block;
+}
+
+.options__input  {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 53px;
+	width: 100%;
+}
+
+.options__input:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.options__input input {
+	height: 50px;
+	width: 100%;
+	font-size: 18px;
+	padding: 0 15px 0 46px;
+	border: 1px solid #e3e3e3;
+	border-radius: 8px;
+}
+
+.options__input input:focus {
+	border-color: #007bff;
+}
+
+.options__loop {
+}
+.options__loop i {
+	position: absolute;
+	left: 15px;
+	top: 55%;
+	transform: translateY(-55%);
+	color: #999;
+	font-size: 20px;
+	line-height: 53px;
+}
+.options__list {
+	max-height: 270px;
+	overflow-y: scroll;
+}
+
+.options__list::-webkit-scrollbar {
+	width: 7px;
+}
+
+.options__list::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+	border-radius: 25px;
+}
+
+.options__list::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 25px;
+}
+
+.options__item {
+	cursor: pointer;
+}
+
+.options__item:not(:last-child) {
+	margin-bottom: 14px;
+}
+.options__country {
+	padding: 10px;
+	font-size: 20px;
+	transition: all 0.3s ease;
+}
+
+.options__country:hover {
+	background-color: #f5f5f5;
+	border-radius: 8px;
+	margin-right: 6px;
+}
